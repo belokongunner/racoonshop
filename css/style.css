@@ -1,0 +1,342 @@
+body{
+    padding-top: 67px;
+    background: linear-gradient(100deg, #eee 40%, #87CEEB 70%);
+    height: 100vh;
+    font-family: Cuprum;
+}
+
+i.sh{
+    width: 60px;
+    text-align: center;
+}
+
+i.fa-circle-o{
+    width: 30px;
+    text-align: left;
+}
+
+a.list-group-item>i.fa {
+    width: 30px;
+    text-align: left;
+}
+
+label[for="amount"]{
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+    padding: 0 15px;
+}
+
+.navbar-default .navbar-brand:hover {
+    background-color: #333;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: skyblue;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background-color: skyblue;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+
+.fcntr {
+    color: skyblue;
+    display: inline;
+    width: 75%;
+    margin: 4px 0;
+}
+
+.form-control:focus {
+    border-color: skyblue;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(135, 206, 235,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(135, 206, 235,.6);
+}
+
+
+
+.btn-default {
+    color: #333;
+    background-color: skyblue;
+    border-color: #ccc;
+    padding: 6px;
+    margin: 0;
+}
+
+.btn-default:hover {
+    color: skyblue;
+    background-color: #333;
+    border-color: #adadad;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+
+/*--contact--*/
+
+.contact {
+    padding: 60px 0;
+}
+
+.contact-map{
+    width:100%;
+    margin-bottom: 52px;
+}
+.contact-map iframe {
+    width: 100%;
+    height: 330px;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-form{
+    margin-bottom: 50px;
+}
+.contact-left{
+    width:30%;
+    float:left;
+}
+.contact-right{
+    width:68%;
+    float:right;
+}
+.contact-left input[type="text"]{
+    width: 100%;
+    color: #000;
+    margin: 0 23px 23px 0;
+    font-size:14px;
+    padding: 12px 10px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+.contact-right textarea{
+    width: 100%;
+    color: #000;
+    font-size:14px;
+    resize: none;
+    height: 185px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+.contact-form input[type=submit] {
+    color: #333;
+    background-color: skyblue;
+    border:none;
+    padding: 13px 43px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    }
+
+.contact-form input[type=submit]:hover {
+    color: skyblue;
+    background-color: #333;
+    border-color: #adadad;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+.contact-info h2{
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+}
+.contact-info h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-control.right{
+    background-image: none;
+}
+
+.list-group-item.active,.list-group-item.active:focus {
+    color: #000;
+    background-color: skyblue;
+    border-color: #ccc;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+
+.list-group-item.active:focus {
+    color: #000;
+    background-color: darkcyan;
+    border-color: #ccc;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+
+.list-group-item.active:hover{
+    color: skyblue;
+    background-color: #333;
+    border-color: #adadad;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+a.list-group-item:hover{
+    color: skyblue;
+    background-color: #333;
+    border-color: #adadad;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+a.list-group-item:focus{
+    color: #000;
+    background-color: skyblue;
+    border-color: #ccc;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+
+.flex-direction-nav a {
+    width: 25px;
+    height: 50px;
+    top: 40%
+}
+
+.dress-name h3{
+    float: right;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.dress-name p{
+    margin: 40px 0;
+
+}
+.dress-info input[type=submit], .form-adding input[type=submit], input[type=submit]#submit, .tab-pane input[type=submit], #loginsubmit {
+    color: #333;
+    background-color: skyblue;
+    border:none;
+    padding: 13px 43px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dress-info input[type=submit]:hover, .form-adding input[type=submit]:hover, input[type=submit]#submit:hover, .tab-pane input[type=submit]:hover, #loginsubmit:hover {
+    color: skyblue;
+    background-color: #333;
+    border-color: #adadad;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    -moz-transition: .5s all;
+}
+.tab-pane input[type=text]{
+    min-width: 300px;
+}
+
+input[type=submit]#submit {
+    float: right;
+    margin: 15px 15px 0 15px;
+    padding: 7px 100px;
+    border-radius: 4px
+}
+
+#feedback4, #feedback5, #feedback7{
+    margin-top: 15px;
+}
+
+#addon4, #addon5{
+    padding: 10px 11px 6px 11px;
+    border-right: 1px solid #ccc;;
+}
+
+#addont4, #addont5{
+    padding: 9px 12px;
+}
+
+#feedback6{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+#feedback6 h3{
+    margin: 0;
+}
+
+.gn-menu-main > li > a.logo {
+    padding: 5px 15px 0 15px;
+}
+
+.gn-menu-main > li > a.logo:hover{
+    background-color: #333;
+}
+
+a.invisible
+{
+    visibility: visible;
+    display: block!important;
+}
+
+
+#signup {
+    left: 400px;
+    width: 404px;
+    padding-bottom: 2px;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+    box-sizing: content-box;
+
+}
+
+#signup-header {box-sizing: content-box; padding: 18px 18px 14px 18px; border-bottom: 1px solid #CCC; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; }
+
+#signup-header  h2 { box-sizing: content-box; color: #444; font-weight: 700; margin-bottom: 3px; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
+#signup-header  p { box-sizing: content-box; color: #444; margin: 0; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); text-shadow: none; }
+
+#signup .txt-fld { box-sizing: content-box; position: relative; width: 364px; padding: 14px 20px; border-bottom: 1px solid #EEE; text-align: right; }
+#signup .btn-fld {box-sizing: content-box; width: 254px; overflow: hidden; padding: 12px 20px 12px 136px; }
+
+#signup .txt-fld label { box-sizing: content-box; display: block; float: left; width: 90px; padding-top: 8px; color: #222; text-align: left;  }
+#signup .txt-fld input { box-sizing: content-box; width: 244px; padding: 8px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; font-size: 1.2em; color: #222; background: #F7F7F7; font-family: "Helvetica Neue"; outline: none; border-top: 1px solid #CCC; border-left: 1px solid #CCC; border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; }
+#signup .txt-fld input.error_input { background: #FDE0E0; }

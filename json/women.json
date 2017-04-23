@@ -1,0 +1,50 @@
+{
+  "product1":{
+    "imgsrc": "images/1.jpg",
+    "heading": "Куртка Remain",
+    "description": "Very good product for good customer",
+    "price": "1499",
+    "type":"jacket",
+    "article":"order232242"
+  },
+  "product2":{
+    "imgsrc": "images/2.jpg",
+    "heading": "Very  blablabla good product",
+    "description": "Blablabla product for good customer",
+    "price": "499",
+    "type":"tshirt",
+    "article":"order232242"
+  },
+  "product3":{
+    "imgsrc": "images/3.jpg",
+    "heading": "Very good blabla product",
+    "description": "Very good blablabla for good blablabla",
+    "price": "1099",
+    "type":"jacket",
+    "article":"order232242"
+  },
+  "product4":{
+    "imgsrc": "images/4.jpg",
+    "heading": "Very  blablabla good product",
+    "description": "Blablabla product for good customer",
+    "price": "499",
+    "type":"pullover",
+    "article":"order232242"
+  },
+  "product5":{
+    "imgsrc": "images/5.jpg",
+    "heading": "Very  blablabla good product",
+    "description": "Blablabla product for good customer",
+    "price": "499",
+    "type":"pullover",
+    "article":"order232242"
+  },
+  "product6":{
+    "imgsrc": "images/6.jpg",
+    "heading": "Very  blablabla good product",
+    "description": "Blablabla product for good customer",
+    "price": "499",
+    "type":"tshirt",
+    "article":"order232242"
+  }
+}

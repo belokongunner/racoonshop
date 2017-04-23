@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racoonshop</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <ul class="gn-menu-main" id="gn-menu">
+            <li class="gn-trigger pull-left">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <li>
+                                <i class="gn-icon gn-icon-search"></i>
+                                <input type="text" class="form-control" id="search" placeholder="Поиск...">
+                            </li>
+                            <li>
+                                <a><i class="fa fa-male fa-lg"></i> Мужское</a>
+                                <ul class="gn-submenu">
+                                    <li><a><i class="fa fa-paw fa-lg"></i>Куртки</a></li>
+                                    <li><a><i class="fa fa-paw fa-lg"></i>Жилеты</a></li>
+                                    <li><a><i class="fa fa-paw fa-lg"></i>Пуховики</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-female fa-lg"></i> Женское</a>
+                                <ul class="gn-submenu">
+                                    <li><a><i class="fa fa-paw fa-lg"></i>Куртки</a></li>
+                                    <li><a><i class="fa fa-paw fa-lg"></i>Жилеты</a></li>
+                                    <li><a><i class="fa fa-paw fa-lg"></i>Пуховики</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://vk.com/enotshopua" target="_blank"><i class="fa fa-vk fa-lg"></i> Мы Вконтакте</a>
+                            </li>
+                        </ul>
+                    </div><!-- /gn-scroller -->
+                </nav>
+            </li>
+            <li><a class="logo" href="index.html"><img src="images/racoonlogo.png" class="img-responsive" alt=""></a></li>
+
+        </ul>
+    </div><!-- /.container-fluid -->
+
+    <div class="container">
+
+    <!--<div class="row">-->
+        <!--<div class="col-md-3" id="sidebar">-->
+            <!--<div class="list-group">-->
+                <!--<a href="#" id="men" class="list-group-item active">Мужское</a>-->
+                <!--<a href="#" id="menjacket" class="list-group-item">Куртки</a>-->
+                <!--<a href="#" id="menpullover" class="list-group-item">Свитеры</a>-->
+                <!--<a href="#" id="mentshirt" class="list-group-item">Футболки</a>-->
+                <!--<a href="#" id="women" class="list-group-item active">Женское</a>-->
+                <!--<a href="#" class="list-group-item">Куртки</a>-->
+                <!--<a href="#" class="list-group-item">Свитеры</a>-->
+                <!--<a href="#" class="list-group-item">Футболки</a>-->
+                <!--<a href="#" id="children" class="list-group-item active">Детское</a>-->
+                <!--<a href="#" class="list-group-item">Куртки</a>-->
+                <!--<a href="#" class="list-group-item">Свитеры</a>-->
+                <!--<a href="#" class="list-group-item">Футболки</a>-->
+                <!--<div class="well">-->
+                    <!--<p>-->
+                        <!--<label for="amount">Цена:</label>-->
+                        <!--<input type="text" id="amount" readonly style="border:0; color:skyblue; background-color: inherit; font-weight: bold; width: 100px;">-->
+                    <!--</p>-->
+                    <!--<div id="slider-range"></div>-->
+                <!--</div>-->
+                <!--<ul id="tocify-header5" class="tocify-header nav nav-list">-->
+                    <!--<li class="tocify-item" data-unique="GettingStarted" style="cursor: pointer;">-->
+                        <!--<a>Getting Started</a>-->
+                    <!--</li>-->
+                    <!--<ul class="tocify-subheader nav nav-list" data-tag="3" style="display: none;">-->
+                        <!--<li class="tocify-item" data-unique="Downloads" style="cursor: pointer;">-->
+                            <!--<a>Downloads</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="IncludeCSSandJavaScriptfiles" style="cursor: pointer;">-->
+                            <!--<a>Include CSS and JavaScript files</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="HTML" style="cursor: pointer;">-->
+                            <!--<a>HTML</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="CSS" style="cursor: pointer;">-->
+                            <!--<a>CSS</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="JavaScript" style="cursor: pointer;">-->
+                            <!--<a>JavaScript</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</ul>-->
+                <!--<ul id="tocify-header6" class="tocify-header nav nav-list">-->
+                    <!--<li class="tocify-item" data-unique="GettingStarted" style="cursor: pointer;">-->
+                        <!--<a>Getting Started</a>-->
+                    <!--</li>-->
+                    <!--<ul class="tocify-subheader nav nav-list" data-tag="3" style="display: none;">-->
+                        <!--<li class="tocify-item" data-unique="Downloads" style="cursor: pointer;">-->
+                            <!--<a>Downloads</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="IncludeCSSandJavaScriptfiles" style="cursor: pointer;">-->
+                            <!--<a>Include CSS and JavaScript files</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="HTML" style="cursor: pointer;">-->
+                            <!--<a>HTML</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="CSS" style="cursor: pointer;">-->
+                            <!--<a>CSS</a>-->
+                        <!--</li>-->
+                        <!--<li class="tocify-item" data-unique="JavaScript" style="cursor: pointer;">-->
+                            <!--<a>JavaScript</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-9" id="jumbo"></div>-->
+        <!--<div class="col-md-9" id="content">-->
+            <!--<div class="well col-md-12">-->
+                <!--<div class="col-md-5 zoom-grid">-->
+                    <!--<div class="flexslider">-->
+                        <!--<ul class="slides">-->
+                            <!--<li data-thumb="images/1.jpg">-->
+                                <!--<div class="thumb-image">-->
+                                    <!--<img src="images/1.jpg" data-imagezoom="true" class="img-responsive" alt="" />-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--<li data-thumb="images/2.jpg">-->
+                                <!--<div class="thumb-image">-->
+                                    <!--<img src="images/2.jpg" data-imagezoom="true" class="img-responsive" alt="" />-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--<li data-thumb="images/3.jpg">-->
+                                <!--<div class="thumb-image">-->
+                                    <!--<img src="images/3.jpg" data-imagezoom="true" class="img-responsive" alt="" />-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--<li data-thumb="images/4.jpg">-->
+                                <!--<div class="thumb-image">-->
+                                    <!--<img src="images/4.jpg" data-imagezoom="true" class="img-responsive" alt="" />-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-7 dress-info">-->
+                    <!--<div class="dress-name">-->
+                        <!--<h3 class="pull-left">LOREM IPSUM DRESS</h3>-->
+                        <!--<h3 class="pull-right">₴459.00</h3>-->
+                        <!--<div class="clearfix"></div>-->
+                        <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>-->
+                        <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>-->
+                    <!--</div>-->
+                    <!--<div class="span span1">-->
+                        <!--<p class="pull-left">FABRIC ORIGIN</p>-->
+                        <!--<p class="pull-right">Japan</p>-->
+                        <!--<div class="clearfix"></div>-->
+                    <!--</div>-->
+                    <!--<div class="span span2">-->
+                        <!--<p class="pull-left">MADE IN</p>-->
+                        <!--<p class="pull-right">China</p>-->
+                        <!--<div class="clearfix"></div>-->
+                    <!--</div>-->
+                    <!--<div class="span span3">-->
+                        <!--<p class="pull-left">COLOR</p>-->
+                        <!--<p class="pull-right">White</p>-->
+                        <!--<div class="clearfix"></div>-->
+                    <!--</div>-->
+                    <!--<div class="span span4">-->
+                        <!--<p class="pull-left">SIZE</p>-->
+                        <!--<p class="pull-right">-->
+                            <!--<span class="selection-box">-->
+                                <!--<select class="domains valid" name="domains">-->
+                                    <!--<option>M</option>-->
+                                    <!--<option>L</option>-->
+                                    <!--<option>XL</option>-->
+                                    <!--<option>FS</option>-->
+                                    <!--<option>S</option>-->
+                                <!--</select>-->
+                            <!--</span>-->
+                        <!--</p>-->
+                        <!--<div class="clearfix"></div>-->
+                    <!--</div>-->
+                    <!--<input type="submit" value="Купить">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+    new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+</body>
+</html>

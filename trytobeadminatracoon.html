@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racoonshop Admin</title>
+    <link rel="stylesheet" href="http://services.web-manufacture.net/Styles/System.default.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://services.web-manufacture.net/Base/v1.5?join=true"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .form-adding {
+
+            padding: 19px 29px 29px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        }
+        .form-adding .form-adding-heading{
+            margin-bottom: 10px;
+        }
+        .form-adding label input[type="text"] {
+            min-width: 300px;
+            font-size: 16px;
+            height: auto;
+            margin-bottom: 15px;
+            padding: 7px 9px;
+        }
+        .dropbox{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="signup" class="col-md-offset-4">
+    <div id="signup-ct">
+        <div id="signup-header">
+            <h2>Войти</h2>
+            <p>Для администрирования введите логин и пароль</p>
+        </div>
+
+        <form action="">
+
+            <div class="txt-fld">
+                <label for="1">Логин</label>
+                <input id="1" name="" type="text">
+            </div>
+
+            <div class="txt-fld">
+                <label for="3">Пароль</label>
+                <input id="3" name="" type="text">
+            </div>
+
+            <div class="btn-fld">
+                <input type="submit" id="loginsubmit" value="Войти">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container" id="cont" style="display: none">
+    <div class="row" id="row">
+        <div class="col-md-10 col-md-offset-2">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#add" data-toggle="tab">Добавить товар</a></li>
+                <li role="presentation"><a href="#delete" data-toggle="tab">Удалить товар</a></li>
+                <li role="presentation"><a href="#orders" data-toggle="tab">Заказы</a></li>
+                <li role="presentation"><a href="#messages" data-toggle="tab">Сообщения</a></li>
+                <li role="presentation"><a href="#jumbotron" data-toggle="tab">Настройки слайдов</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in well" id="add">
+                    <h2 class="form-adding-heading">Добавить новый товар</h2>
+                    <p class="pull-left">Пол</p>
+                    <p class="">&nbsp
+                        <span class="selection-box">
+                            <select class="domainssex" name="domains">
+                                <option>...</option>
+                                <option>м</option>
+                                <option>ж</option>
+                            </select>
+                        </span>
+                    </p>
+                    <div class="clearfix"></div>
+                    <p class="pull-left">Тип</p>
+                    <p class="">&nbsp
+                        <span class="selection-box">
+                            <select class="domainstype" name="domains">
+                                <option>...</option>
+                                <option>Куртка</option>
+                                <option>Жилет</option>
+                                <option>Пуховик</option>
+                                <option>Футболка</option>
+                                <option>Толстовка</option>
+                                <option>Платье</option>
+                            </select>
+                        </span>
+                    </p>
+                    <div class="clearfix"></div>
+                    <p class="pull-left">Бренд</p>
+                    <p class="">&nbsp
+                        <span class="selection-box">
+                            <select class="domainsbrand" name="domains">
+                                <option>...</option>
+                                <option>Remain</option>
+                                <option>Malidinu</option>
+                                <option>Tiger Force</option>
+                                <option>Black Vinyl</option>
+                                <option>Caprice</option>
+                                <option>Sooyt</option>
+                                <option>Leima</option>
+                                <option></option>
+                            </select>
+                        </span>
+                    </p>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="heading" placeholder="Заголовок">&nbsp&nbsp&nbsp Введите заголовок товара
+                    </label>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="description" placeholder="Описание">&nbsp&nbsp&nbsp Введите описание товара
+                    </label>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="price" placeholder="Цена">&nbsp&nbsp&nbsp Введите цену
+                    </label>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="fabricant" placeholder="Производитель">&nbsp&nbsp&nbsp Введите страну
+                    </label>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="color" placeholder="Цвет">&nbsp&nbsp&nbsp Введите цвет
+                    </label>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="size" placeholder="Размеры">&nbsp&nbsp&nbsp Введите размеры
+                    </label>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="articul" placeholder="Артикул">&nbsp&nbsp&nbsp Введите артикул
+                    </label>
+                    <div class="clearfix"></div>
+                    <label class="input">
+                        <input type="text" class="" id="imgnum" placeholder="Количество картинок">&nbsp&nbsp&nbsp Введите количество картинок
+                    </label>
+                    <div class="clearfix">&nbsp</div>
+                    <input type="submit" id="addsubmit" value="Добавить">
+                </div>
+                <div class="tab-pane fade well" id="delete">
+                    <div class="clearfix">&nbsp</div>
+                    <label class="input">
+                        <input type="text" class="" id="del" placeholder="Артикул"> Введите артикул удалаляемого товара
+                    </label>
+                    <div class="clearfix">&nbsp</div>
+                    <input type="submit" id="delsubmit" value="Удалить">
+                </div>
+
+                <div class="tab-pane fade" id="orders">
+
+                </div>
+
+                <div class="tab-pane fade" id="messages">
+
+                </div>
+                <div class="tab-pane fade" id="jumbotron">
+                    <div class="well">
+                        <div class="clearfix">&nbsp</div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo1head" placeholder="Заголовок 1">&nbsp&nbsp&nbsp Введите первый заголовок
+                        </label>
+                        <div class="clearfix"></div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo1desc" placeholder="Описание 1">&nbsp&nbsp&nbsp Введите первое описание
+                        </label>
+                        <div class="clearfix">&nbsp</div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo2head" placeholder="Заголовок 2">&nbsp&nbsp&nbsp Введите второй заголовок
+                        </label>
+                        <div class="clearfix"></div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo2desc" placeholder="Описание 2">&nbsp&nbsp&nbsp Введите второе описание
+                        </label>
+                        <div class="clearfix">&nbsp</div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo3head" placeholder="Заголовок 3">&nbsp&nbsp&nbsp Введите третий заголовок
+                        </label>
+                        <div class="clearfix"></div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo3desc" placeholder="Описание 3">&nbsp&nbsp&nbsp Введите третье описание
+                        </label>
+                        <div class="clearfix">&nbsp</div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo4head" placeholder="Заголовок 4">&nbsp&nbsp&nbsp Введите четвертый заголовок
+                        </label>
+                        <div class="clearfix"></div>
+                        <label class="input">
+                            <input type="text" class="" id="jumbo4desc" placeholder="Описание 4">&nbsp&nbsp&nbsp Введите четвертое описание
+                        </label>
+                        <div class="clearfix">&nbsp</div>
+                        <div class="clearfix">&nbsp</div>
+                        <input type="submit" id="jumbosubmit" value="Сохранить">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/adminscript.js"></script>
+<script src="js/imgadd.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racoonshop</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <ul class="gn-menu-main" id="gn-menu">
+            <li class="gn-trigger pull-left">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <li>
+                                <i class="sh fa fa-search"></i>
+                                <input type="text" class="fcntr form-control" id="search" placeholder="Поиск...">
+                            </li>
+                            <li>
+                                <a onmouseover="document.getElementById('amount').style.color='#333';" onmouseout="document.getElementById('amount').style.color='skyblue';">
+                                    <i class="sh fa fa-money fa-lg" aria-hidden="true"></i>
+                                    <label for="amount">Цена:</label>
+                                    <input type="text" id="amount" readonly style="border:0; color:skyblue; background-color: inherit; font-weight: bold; width: 100px;">
+                                </a>
+                                <ul class="gn-submenu">
+                                    <li><div id="slider-range" style="margin: 15px 50px 15px 35px"></div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="men" class="paragraph"><i class="sh fa fa-male fa-lg"></i> Мужское</a>
+                                <ul class="gn-submenu">
+                                    <li><a id="menjacket" class="paragraph"><i class="sh fa fa-paw"></i>Куртки</a></li>
+                                    <li><a id="menjacketremain" class="paragraph"><i class="sh fa fa-paw" style="color: transparent"></i><i class="fa fa-circle-o"></i>Remain</a></li>
+                                    <li><a id="menjacketmalidinu" class="paragraph"><i class="sh fa fa-paw" style="color: transparent"></i><i class="fa fa-circle-o"></i>Malidinu</a></li>
+                                    <li><a id="menjackettgrfrc" class="paragraph"><i class="sh fa fa-paw" style="color: transparent"></i><i class="fa fa-circle-o"></i>Tiger Force</a></li>
+                                    <li><a id="menjacketblckvnl" class="paragraph"><i class="sh fa fa-paw" style="color: transparent"></i><i class="fa fa-circle-o"></i>Black Vinyl</a></li>
+                                    <li><a id="menjacketcaprice" class="paragraph"><i class="sh fa fa-paw" style="color: transparent"></i><i class="fa fa-circle-o"></i>Caprice</a></li>
+                                    <li><a id="menjacketsooyt" class="paragraph"><i class="sh fa fa-paw" style="color: transparent"></i><i class="fa fa-circle-o"></i>Sooyt</a></li>
+                                    <li><a id="menjacketleima" class="paragraph"><i class="sh fa fa-paw" style="color: transparent"></i><i class="fa fa-circle-o"></i>Leima</a></li>
+                                    <li><a id="menvest" class="paragraph"><i class="sh fa fa-paw"></i>Жилеты</a></li>
+                                    <li><a id="mendownjacket" class="paragraph"><i class="sh fa fa-paw"></i>Пуховики</a></li>
+                                    <li><a id="menhood" class="paragraph"><i class="sh fa fa-paw"></i>Толстовки</a></li>
+                                    <li><a id="mentshirt" class="paragraph"><i class="sh fa fa-paw"></i>Футболки</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="women" class="paragraph"><i class="sh fa fa-female fa-lg"></i> Женское</a>
+                                <ul class="gn-submenu">
+                                    <li><a id="womenjacket" class="paragraph"><i class="sh fa fa-paw"></i>Куртки</a></li>
+                                    <li><a id="womenvest" class="paragraph"><i class="sh fa fa-paw"></i>Жилеты</a></li>
+                                    <li><a id="womendress" class="paragraph"><i class="sh fa fa-paw"></i>Платья</a></li>
+                                    <li><a id="womensvit" class="paragraph"><i class="sh fa fa-paw"></i>Блузки/Джемперы</a></li>
+                                    <li><a id="womenshirt" class="paragraph"><i class="sh fa fa-paw"></i>Рубашки</a></li>
+                                    <li><a id="womentshirt" class="paragraph"><i class="sh fa fa-paw"></i>Футболки</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div><!-- /gn-scroller -->
+                </nav>
+            </li>
+            <li><a class="logo" href="index.html"><img src="images/racoonlogo.png" class="img-responsive" alt=""></a></li>
+        </ul>
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+    <div class="row" id="row">
+
+    </div>
+</div>
+
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/barn.js"></script>
+<script src="js/script.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/imagezoom.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+
+<script>
+    new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+</body>
+</html>

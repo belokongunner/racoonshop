@@ -1,0 +1,23 @@
+{
+  "jumbo1":{
+    "heading": "Chania",
+    "description": "The atmosphere in Chania has a touch of Florence and Venice.",
+    "imgsrc": "images/22.jpg"
+  },
+  "jumbo2":{
+    "heading": "Chania",
+    "description": "Beatiful flowers in Kolymbari, Crete.",
+    "imgsrc": "images/30.jpg"
+  },
+  "jumbo3":{
+    "heading": "Flower",
+    "description": "Beatiful flowers in Kolymbari, Crete.",
+    "imgsrc": "images/33.jpg"
+  },
+  "jumbo4":{
+    "heading": "Flower",
+    "description": "The atmosphere in Chania has a touch of Florence and Venice.",
+    "imgsrc": "images/35.jpg"
+  }
+
+}

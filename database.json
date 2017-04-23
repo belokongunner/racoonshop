@@ -1,0 +1,46 @@
+{
+  "catalog": [
+    {
+      "id": "order12345",
+      "category": "male",
+      "title": "Щайтан куртка",
+      "description": "Очинь хороший куртка, вах!",
+      "price": "1499",
+      "images": [
+        "images/1.jpg",
+        "images/2.jpg"
+      ]
+    },
+    {
+      "id": "order54321",
+      "category": "female",
+      "title": "Куртка красний",
+      "description": "Красивий куртка, да!",
+      "price": "1099",
+      "images": [
+        "images/3.jpg",
+      ]
+    },
+    {
+      "id": "order77777",
+      "category": "children",
+      "title": "Куртка детский",
+      "description": "Куртка для малинький мальчик!",
+      "price": "899",
+      "images": [
+        "images/4.jpg",
+        "images/5.jpg"
+      ]
+    },
+    {
+      "id": "order98765",
+      "category": "children",
+      "title": "Еще куртка детский",
+      "description": "Куртка для дэвочка!",
+      "price": "799",
+      "images": [
+        "images/6.jpg"
+      ]
+    }
+  ]
+}

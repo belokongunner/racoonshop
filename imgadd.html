@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racoonshop Admin</title>
+    <link rel="stylesheet" href="http://services.web-manufacture.net/Styles/System.default.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://services.web-manufacture.net/Base/v1.5?join=true"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        input{
+            margin: 20px;
+            min-width: 200px;
+        }
+        h3{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="col-md-9 col-md-offset-3">
+    <input type="text" class="" id="articul" placeholder="Артикул"> Введите артикул
+    <p id="raf"></p>
+    <div class="clearfix"></div>
+    <input type="text" class="" id="imgnum" placeholder="Номер картинки"> Введите номер картинки
+    <p id="rof"></p>
+    <div class="clearfix"></div>
+    <input type="submit" id="submit" value="Применить">
+    <div class="clearfix"></div>
+    <h3>Теперь перетащите картику</h3>
+</div>
+
+
+<script type="text/javascript">
+    WS.DOMload(function(){
+        WS.Body.ondragover = function(event) {
+            var types = event.dataTransfer.types;
+            if (types[2] && types[2] == "Files"){ event.preventDefault(); return true; }
+            return false;
+        };
+
+        function upload(file){
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST',  "images/" + file.name, true);
+            xhr.send(file);
+        }
+
+        WS.Body.ondrop = function(event) {
+            var types = event.dataTransfer.types;
+            var files = event.dataTransfer.files;
+            if (types && types.length && (types[0] == "Files" || types[0]== "application/x-moz-file") && files && files.length > 0){
+                event.preventDefault();
+                for (var i = 0; i < files.length; i++){
+                    upload(files[i]);
+                }
+                return true;
+            }
+            return false;
+        };
+    })
+</script>
+
+
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
